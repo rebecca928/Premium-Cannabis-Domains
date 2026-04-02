@@ -1,14 +1,507 @@
-{
-  "name": "premium-cannabis-domains",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "14.2.25",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
-  }
+export default function Page() {
+  const domains = [
+    {
+      name: 'AiryCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Light, modern, lifestyle-driven brand positioning',
+      tags: ['Lifestyle', 'Beverage', 'Low-dose'],
+      featured: true,
+    },
+    {
+      name: 'AmpCanna.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'High-energy shorthand built for modern cannabis brands with momentum',
+      tags: ['Energy', 'Function', 'Performance'],
+    },
+    {
+      name: 'BlackCatCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Bold, edgy equity for night, pre-roll, or culture-forward lines',
+      tags: ['Edgy', 'Night', 'Pre-roll'],
+    },
+    {
+      name: 'BigTimeCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Broad, memorable scale for retail-forward or mass premium plays',
+      tags: ['Mass', 'Value', 'Retail'],
+    },
+    {
+      name: 'CAPSCanna.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Clean, clinical shorthand ideal for capsules and wellness formats',
+      tags: ['Capsules', 'Wellness', 'Precision'],
+    },
+    {
+      name: 'CAPSCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A more explicit extension of the CAPS platform for capsule-led brand systems',
+      tags: ['Capsules', 'Wellness', 'Platform'],
+    },
+    {
+      name: 'CannaRouter.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A smart, systems-driven name for B2B, logistics, or distribution',
+      tags: ['Tech', 'Distribution', 'B2B'],
+    },
+    {
+      name: 'Cannabis-Sales.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Direct, high-intent authority for sales platforms and services',
+      tags: ['B2B', 'Platform', 'Marketplace'],
+    },
+    {
+      name: 'AmplitudeCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A scalable, modern brand name with room for premium expansion',
+      tags: ['Modern', 'Scalable', 'Premium'],
+    },
+    {
+      name: 'FatBoyCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A loud, memorable personality play with room for culture and attitude',
+      tags: ['Bold', 'Culture', 'Character'],
+    },
+    {
+      name: 'PhatBoyCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'An even more stylized expression for heritage, swagger, and standout recall',
+      tags: ['Street', 'Attitude', 'Recall'],
+    },
+    {
+      name: 'CrownBotanicals.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Elevated and refined for a premium botanical or wellness-forward house brand',
+      tags: ['Premium', 'Botanical', 'Wellness'],
+    },
+    {
+      name: 'HighClubCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Social, aspirational naming built for members, loyalty, or elevated lifestyle',
+      tags: ['Club', 'Lifestyle', 'Membership'],
+    },
+    {
+      name: 'FlightClubCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A strong experiential name for flights, sampling, or connoisseur culture',
+      tags: ['Flights', 'Experience', 'Culture'],
+    },
+    {
+      name: 'ArticleOrganics.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Editorial and refined with a modern natural-products sensibility',
+      tags: ['Editorial', 'Organic', 'Refined'],
+    },
+    {
+      name: 'AritcleCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A stylized cannabis naming play with distinctive branding potential',
+      tags: ['Distinctive', 'Modern', 'Brandable'],
+    },
+    {
+      name: 'Pffed.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Short, punchy, and highly memorable for a modern product or platform brand',
+      tags: ['Short', 'Modern', 'Memorable'],
+    },
+    {
+      name: 'SwellCanna.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Smooth, positive, surf-adjacent shorthand with flexible lifestyle upside',
+      tags: ['Lifestyle', 'Surf', 'Modern'],
+    },
+    {
+      name: 'SwellsCanna.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A more dynamic plural version with product-line and campaign flexibility',
+      tags: ['Product', 'Lifestyle', 'Flexible'],
+    },
+    {
+      name: 'SwellsCBD.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A naturally extension-ready name for CBD-specific products and education',
+      tags: ['CBD', 'Extension', 'Wellness'],
+    },
+    {
+      name: 'TopHitCanna.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Performance-forward and catchy with room for potency or music-inspired branding',
+      tags: ['Potency', 'Catchy', 'Performance'],
+    },
+    {
+      name: 'ElaraCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Elegant and celestial with premium appeal for a sophisticated house brand',
+      tags: ['Elegant', 'Premium', 'Celestial'],
+    },
+    {
+      name: 'TorqueExtracts.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Mechanically inspired power branding built for concentrates and extracts',
+      tags: ['Extracts', 'Power', 'Performance'],
+    },
+    {
+      name: 'TorqueCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A broader platform name with force, energy, and expansion potential',
+      tags: ['Power', 'Brand System', 'Expansion'],
+    },
+    {
+      name: 'NodsCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A subtle, clever name with social signal and insider-brand potential',
+      tags: ['Clever', 'Social', 'Insider'],
+    },
+    {
+      name: 'AxonCannabis.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'A sharp, modern science-forward name for a progressive cannabis platform',
+      tags: ['Science', 'Modern', 'Platform'],
+    },
+    {
+      name: 'AxonExtracts.com',
+      label: 'PREMIUM DOMAIN',
+      hook: 'Focused and technical for an extracts line with modern credibility',
+      tags: ['Extracts', 'Technical', 'Credible'],
+    },
+  ].sort((a, b) => a.name.localeCompare(b.name));
+
+  const styles = {
+    page: {
+      minHeight: '100vh',
+      background: '#000',
+      color: '#fff',
+      fontFamily: 'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif',
+      position: 'relative',
+      overflow: 'hidden',
+    },
+    backgroundGlow: {
+      position: 'absolute',
+      inset: 0,
+      background: 'radial-gradient(circle at top, rgba(70,255,130,0.10), transparent 30%), radial-gradient(circle at bottom right, rgba(80,130,255,0.08), transparent 25%)',
+      pointerEvents: 'none',
+    },
+    backgroundGrid: {
+      position: 'absolute',
+      inset: 0,
+      opacity: 0.18,
+      backgroundImage: 'linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)',
+      backgroundSize: '48px 48px',
+      pointerEvents: 'none',
+    },
+    container: {
+      position: 'relative',
+      maxWidth: '1280px',
+      margin: '0 auto',
+      padding: '0 24px',
+    },
+    hero: {
+      paddingTop: '88px',
+      paddingBottom: '40px',
+      maxWidth: '860px',
+    },
+    pill: {
+      display: 'inline-flex',
+      alignItems: 'center',
+      border: '1px solid rgba(255,255,255,0.1)',
+      background: 'rgba(255,255,255,0.05)',
+      borderRadius: '999px',
+      padding: '10px 16px',
+      fontSize: '11px',
+      letterSpacing: '0.24em',
+      color: 'rgba(255,255,255,0.65)',
+    },
+    h1: {
+      margin: '28px 0 0',
+      fontSize: 'clamp(48px, 8vw, 84px)',
+      lineHeight: 0.96,
+      letterSpacing: '-0.04em',
+      fontWeight: 700,
+    },
+    lead: {
+      marginTop: '28px',
+      fontSize: 'clamp(20px, 2vw, 24px)',
+      lineHeight: 1.6,
+      color: 'rgba(255,255,255,0.68)',
+      maxWidth: '900px',
+    },
+    buttonRow: {
+      display: 'flex',
+      gap: '16px',
+      flexWrap: 'wrap',
+      marginTop: '32px',
+    },
+    buttonPrimary: {
+      borderRadius: '999px',
+      background: '#fff',
+      color: '#000',
+      padding: '14px 24px',
+      fontSize: '15px',
+      fontWeight: 600,
+      border: 'none',
+      cursor: 'pointer',
+    },
+    buttonSecondary: {
+      borderRadius: '999px',
+      background: 'rgba(255,255,255,0.05)',
+      color: '#fff',
+      padding: '14px 24px',
+      fontSize: '15px',
+      fontWeight: 600,
+      border: '1px solid rgba(255,255,255,0.12)',
+      cursor: 'pointer',
+    },
+    note: {
+      marginTop: '24px',
+      fontSize: '15px',
+      color: 'rgba(255,255,255,0.45)',
+    },
+    sectionHeaderWrap: {
+      marginBottom: '24px',
+    },
+    sectionEyebrow: {
+      fontSize: '11px',
+      letterSpacing: '0.24em',
+      color: 'rgba(255,255,255,0.42)',
+      marginBottom: '14px',
+    },
+    sectionTitle: {
+      margin: 0,
+      fontSize: 'clamp(32px, 4vw, 44px)',
+      fontWeight: 700,
+      letterSpacing: '-0.03em',
+    },
+    sectionText: {
+      marginTop: '14px',
+      fontSize: '18px',
+      color: 'rgba(255,255,255,0.55)',
+      lineHeight: 1.6,
+      maxWidth: '760px',
+    },
+    grid: {
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+      gap: '24px',
+      paddingBottom: '84px',
+    },
+    cardShell: {
+      borderRadius: '32px',
+      padding: '1px',
+      background: 'linear-gradient(135deg, rgba(255,255,255,0.16), rgba(255,255,255,0.03))',
+      boxShadow: '0 0 0 1px rgba(255,255,255,0.03), 0 24px 60px rgba(0,0,0,0.5)',
+    },
+    featuredShell: {
+      borderRadius: '32px',
+      padding: '1px',
+      background: 'linear-gradient(135deg, rgba(195,255,130,0.42), rgba(255,255,255,0.08), rgba(130,170,255,0.22), rgba(255,120,190,0.20))',
+      boxShadow: '0 0 0 1px rgba(255,255,255,0.04), 0 30px 70px rgba(0,0,0,0.55)',
+    },
+    card: {
+      height: '100%',
+      minHeight: '320px',
+      borderRadius: '31px',
+      border: '1px solid rgba(255,255,255,0.08)',
+      background: 'rgba(5,5,5,0.96)',
+      padding: '28px',
+      position: 'relative',
+      overflow: 'hidden',
+      display: 'flex',
+      flexDirection: 'column',
+    },
+    featuredCard: {
+      minHeight: '420px',
+    },
+    cardGlow: {
+      position: 'absolute',
+      inset: 0,
+      background: 'radial-gradient(circle at top left, rgba(150,255,170,0.12), transparent 35%), radial-gradient(circle at bottom right, rgba(130,170,255,0.1), transparent 30%)',
+      pointerEvents: 'none',
+    },
+    cardTop: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: '16px',
+      position: 'relative',
+      zIndex: 1,
+    },
+    miniPill: {
+      borderRadius: '18px',
+      border: '1px solid rgba(255,255,255,0.1)',
+      background: 'rgba(255,255,255,0.05)',
+      padding: '9px 12px',
+      fontSize: '10px',
+      letterSpacing: '0.22em',
+      color: 'rgba(255,255,255,0.58)',
+    },
+    cardNumber: {
+      fontSize: '12px',
+      color: 'rgba(255,255,255,0.24)',
+    },
+    cardBody: {
+      marginTop: 'auto',
+      position: 'relative',
+      zIndex: 1,
+    },
+    domainName: {
+      fontSize: 'clamp(30px, 3vw, 42px)',
+      lineHeight: 1.08,
+      letterSpacing: '-0.03em',
+      fontWeight: 700,
+      margin: '0 0 18px',
+      wordBreak: 'break-word',
+    },
+    hook: {
+      margin: 0,
+      fontSize: '18px',
+      lineHeight: 1.65,
+      color: 'rgba(255,255,255,0.6)',
+    },
+    tags: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '10px',
+      marginTop: '24px',
+      position: 'relative',
+      zIndex: 1,
+    },
+    tag: {
+      borderRadius: '999px',
+      border: '1px solid rgba(255,255,255,0.1)',
+      background: 'rgba(255,255,255,0.04)',
+      padding: '9px 14px',
+      fontSize: '13px',
+      color: 'rgba(255,255,255,0.66)',
+    },
+    cardCta: {
+      marginTop: '24px',
+      fontSize: '15px',
+      color: 'rgba(255,255,255,0.82)',
+      position: 'relative',
+      zIndex: 1,
+    },
+    whySection: {
+      borderTop: '1px solid rgba(255,255,255,0.1)',
+      padding: '56px 0 72px',
+    },
+    whyGrid: {
+      display: 'grid',
+      gridTemplateColumns: '1.15fr 1fr 1fr',
+      gap: '28px',
+      alignItems: 'start',
+    },
+    whyTitle: {
+      margin: 0,
+      fontSize: 'clamp(28px, 3vw, 38px)',
+      fontWeight: 700,
+      letterSpacing: '-0.03em',
+    },
+    whyText: {
+      margin: 0,
+      fontSize: '17px',
+      lineHeight: 1.7,
+      color: 'rgba(255,255,255,0.62)',
+    },
+    whyList: {
+      display: 'grid',
+      gap: '12px',
+    },
+    whyItem: {
+      borderRadius: '18px',
+      border: '1px solid rgba(255,255,255,0.1)',
+      background: 'rgba(255,255,255,0.03)',
+      padding: '16px 18px',
+      fontSize: '15px',
+      color: 'rgba(255,255,255,0.76)',
+      lineHeight: 1.45,
+    },
+  };
+
+  return (
+    <div style={styles.page}>
+      <div style={styles.backgroundGlow} />
+      <div style={styles.backgroundGrid} />
+
+      <div style={styles.container}>
+        <section style={styles.hero}>
+          <div style={styles.pill}>CURATED DIGITAL BRAND ASSETS</div>
+          <h1 style={styles.h1}>
+            PREMIUM CANNABIS
+            <br />
+            BRAND DOMAINS
+          </h1>
+          <p style={styles.lead}>
+            The launchpad for license-holders to secure a premium name at the very foundation of the brand.
+            Strategic domains with built-in relevance, recall, and long-term value.
+          </p>
+          <div style={styles.buttonRow}>
+            <button style={styles.buttonPrimary}>View Available Domains</button>
+            <button style={styles.buttonSecondary}>Request Private Access</button>
+          </div>
+          <div style={styles.note}>Each domain is offered exclusively. Once acquired, it’s gone.</div>
+        </section>
+
+        <section>
+          <div style={styles.sectionHeaderWrap}>
+            <div style={styles.sectionEyebrow}>FEATURED INVENTORY</div>
+            <h2 style={styles.sectionTitle}>Available Premium Domains</h2>
+            <p style={styles.sectionText}>Presented like strategic assets, not commodity listings.</p>
+          </div>
+
+          <div style={styles.grid}>
+            {domains.map((domain, index) => {
+              const shellStyle = domain.featured ? styles.featuredShell : styles.cardShell;
+              const cardStyle = domain.featured
+                ? { ...styles.card, ...styles.featuredCard }
+                : styles.card;
+
+              return (
+                <div key={domain.name} style={shellStyle}>
+                  <div style={cardStyle}>
+                    <div style={styles.cardGlow} />
+                    <div style={styles.cardTop}>
+                      <div style={styles.miniPill}>{domain.label}</div>
+                      <div style={styles.cardNumber}>{String(index + 1).padStart(2, '0')}</div>
+                    </div>
+
+                    <div style={styles.cardBody}>
+                      <h3 style={styles.domainName}>{domain.name}</h3>
+                      <p style={styles.hook}>{domain.hook}</p>
+                    </div>
+
+                    <div style={styles.tags}>
+                      {domain.tags.map((tag) => (
+                        <span key={tag} style={styles.tag}>
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div style={styles.cardCta}>→ View Details</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        <section style={styles.whySection}>
+          <div style={styles.whyGrid}>
+            <div>
+              <div style={styles.sectionEyebrow}>WHY IT MATTERS</div>
+              <h3 style={styles.whyTitle}>A premium name does more than brand the business.</h3>
+            </div>
+            <p style={styles.whyText}>
+              In cannabis, the right domain can support stronger menu visibility, easier recall, better search relevance,
+              and a more ownable launch story from day one.
+            </p>
+            <div style={styles.whyList}>
+              <div style={styles.whyItem}>Alphabetical and menu-positioning advantages</div>
+              <div style={styles.whyItem}>Built-in industry relevance and keyword authority</div>
+              <div style={styles.whyItem}>Stronger foundation for long-term brand equity</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
 }
