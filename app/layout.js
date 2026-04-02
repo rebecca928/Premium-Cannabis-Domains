@@ -1,4 +1,4 @@
-export default function Page() {
+export const metadata = {
   title: "Premium Cannabis Domains",
   description: "Curated premium cannabis brand domains",
 };
